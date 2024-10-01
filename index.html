@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        .taskGroup {
+            display: flex;
+            gap: 1rem;
+
+            & button {
+                padding: .5rem;
+                line-height: 1;
+              
+            }
+        }
+    </style>
+</head>
+
+    <h1>Todo list</h1>
+    <div class="taskInput">
+    <form id="form">
+        <label for="task">Task:</label>
+        <input class="box" type="text" name="task" id="task" placeholder="Introdueix la tasca...">
+        <input class="btn" value="Add" type="submit">
+    </form>
+    </div>
+
+    <h2>List</h2>
+        <ul id="list">
+        </ul>
+    
+   
+    <script src="./toDo.js"></script>
+
+    
+</body>
+</html>
